@@ -58,22 +58,22 @@ const minPartNumberLength = 3; // (optional) Minimum length of the part file num
 
 // Then/catch version
 split(inputFilePath, outputFolder, outputPrefix, maxItemsPerFile, minPartNumberLength)
-    .then(() => {
-        // Insert your code here, part files have been created
-    })
-    .catch(console.error);
+  .then(() => {
+    // Insert your code here, part files have been created
+  })
+  .catch(console.error);
 
 // Async/await version
 (async () => {
-	try {
-		await split(inputFilePath, outputFolder, outputPrefix, maxItemsPerFile, minPartNumberLength);
+  try {
+    await split(inputFilePath, outputFolder, outputPrefix, maxItemsPerFile, minPartNumberLength);
 
-		// Insert your code here, part files have been created
-	}
+    // Insert your code here, part files have been created
+  }
 
-	catch (error) {
-		console.error(error);
-	}
+  catch (error) {
+    console.error(error);
+  }
 })();
 ```
 
@@ -81,10 +81,10 @@ With the following example input file in `data/input/large-json-file.json`:
 
 ```json
 [
-	{ "id": 1 },
-	{ "id": 2 },
-	{ "id": 3 },
-	{ "id": 4 }
+  { "id": 1 },
+  { "id": 2 },
+  { "id": 3 },
+  { "id": 4 }
 ]
 ```
 The module should generate the following part files in the `data/output` folder:
