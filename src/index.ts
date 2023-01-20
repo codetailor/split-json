@@ -17,8 +17,12 @@ import * as path from 'path';
  */
 export default function split(inputFilePath: string, outputFolder: string, outputPrefix: string, maxItemsPerFile: number = 10_000, minPartNumberLength: number = 4) {
   return new Promise((resolve, reject) => {
+	if (!fs.existsSync(inputFilePath)) { return reject('Input file not found'); }
+
     const fileStream = fs.createReadStream(inputFilePath, 'utf-8');
     const jsonParser = JSONStream.parse('*', null);
+
+	if (!fs.existsSync(outputFolder)) { fs.mkdirSync(outputFolder, { recursive: true }); }
 
     let list: any[] = [];
     let partNumber: number = 1;
