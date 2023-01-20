@@ -1,2 +1,3 @@
-# split-json
+# @codetailor/split-json
+
 Large JSON file splitter
