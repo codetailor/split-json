@@ -130,7 +130,6 @@ All bug reports and feature requests are welcome, and should be submitted throug
 
  - Create a Github issue [here](https://github.com/codetailor/split-json/issues)
  - Tweet me at [@ricardonunesdev](https://twitter.com/ricardonunesdev)
- - Send email to [ricardonunesdev@gmail.com](mailto://ricardonunesdev@gmail.com)
 
 All requests will be created as Github issues, if you don't use that channel.
 
